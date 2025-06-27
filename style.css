@@ -1,0 +1,143 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #1B263B; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("back3.png");
+  background-repeat: no-repeat;
+  background-size: cover;       
+  background-position: center; 
+}
+.input-area {
+  text-align: center;
+}
+
+#numPlayers{
+  height:35px;
+  width: 30vmin;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: #E0E1DD;
+  margin-bottom:50px;
+  text-align: center; 
+  border-radius: 0.5rem;
+}
+
+#set-btn{
+  border:none;
+  border-radius: 2rem;
+  background-color: #E0E1DD;
+  margin-left: 50px;
+  font-weight: bold;
+}
+.start-btn{
+  background-color: #a8dadc;
+  margin-top:20px;
+  margin-bottom: 40PX;
+  margin-left:2vmin;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+.player-name{
+  background-color: #E0E1DD;
+  height: 30px;
+  width: 200px;
+  font-size:medium;
+  margin-bottom: 1.5px;
+  font-weight: bolder;
+
+}
+#numBoxes{
+  height: 30px;
+  width: 200px;
+  background-color: #E0E1DD;
+  font-weight: bolder;
+  font-size:medium;
+  margin-top: 35px;
+  text-align: center; 
+}
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  
+  /* background-color: #00b4d8; */
+    background-image: url("box.png");
+  background-repeat: no-repeat;
+  background-size: cover;       
+  background-position: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  font-weight: bold;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.box.revealed {
+  color: white;
+  font-size: 17px;
+ /* background-color: #c4070a; */
+   background-image: url("red.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;       
+  background-position: center; 
+  cursor: default;
+}
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #E0E1DD;
+}
+#questionBox {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color:white;
+  margin-bottom: 15px;
+}
+.display-que{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.overlay {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+#resetBtn{
+    margin-top: 15px;
+    background-color: #E0E1DD
+}
+.blur {
+  filter: blur(10px);
+}
+.hide{
+    display:none;
+}

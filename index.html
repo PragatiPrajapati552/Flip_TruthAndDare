@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Truth or Dare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <div class="input-area">
+
+    <input type="number" id="numPlayers" placeholder="Enter number of players"> <!-- used for enetring all players names-->
+    <button onclick="generatePlayerInputs()" id="set-btn">Set Players</button>
+    <div id="playerInputs"></div>
+
+    <div class="hiding hide">
+    <input type="number" ID="numBoxes" placeholder="Enter number of boxes"><br></br>
+    <button onclick="startGame()" class="start-btn ">Start Game</button>
+   </div>
+
+  </div>
+
+  <div id="boxContainer" class="box-container" style="display:none"></div>
+
+  <div class="display-que">
+   <div id="choiceBtns" style="display:none">
+    <button id="truthBtn">Truth</button>
+    <button id="dareBtn">Dare</button>
+   </div>
+
+   <div id="questionBox"></div>
+   <button onclick="resetGame()" style="display:none" id="resetBtn">Reset Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

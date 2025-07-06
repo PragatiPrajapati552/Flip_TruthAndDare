@@ -4,6 +4,7 @@ This is a fun and interactive Truth or Dare game built using HTML, CSS, and Java
 
 -Enter Number of Players
 Start by entering how many players will be participating in the game.
+
 -Input Player Names
 Enter the name of each player one by one.
 -Choose Number of Flip Cards
